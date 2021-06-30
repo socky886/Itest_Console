@@ -1,0 +1,160 @@
+I18N Runtime Warning:
+        Missing ICU data file detected while processing directory containing libut.{dll|so|sl|dylib}.
+        Hint: Check for a misconfigured environment or installation.
+the dut is com9
+the vsg is 2
+the vsa is 2
+open api_config.txt successfully
+the cable loss is -30.6
+the frequency offset up is  50
+the frequency offset low is 1
+COM9
+open serial port of dut successfully
+verify dut successfully
+cent nv series_number
+series_number 1306
+vc# 1306
+get serial number successfully
+
+
+Junfeng.wei get the ip address is:192.168.10.254
+open api_config.txt successfully
+ciu force to test mode successfully
+                dut is transmit the single wave
+weijunfeng Set tester external cable loss -30.600000 dB
+---------------------------------
+
+grab single wave frequency and pwoer successfully
+        the frequency is 914979000.000000
+        the obw is 400000.000000
+        the frequency offset is 20942.616866
+        the power is 29.194480
+                         the frequency differ is 21000.000000
+weijunfeng Set tester external cable loss -30.600000 dB
+---------------------------------
+
+grab single wave frequency and pwoer successfully
+        the frequency is 914981000.000000
+        the obw is 400000.000000
+        the frequency offset is 19078.153452
+        the power is 28.939439
+                         the frequency differ is 19000.000000
+ciu xtal calibration successfully
+dut serial port open successfully
+-------------itest connect successfully
+the modulation vsa param use cable loss is -30.600000
+-------------------set modulation vsa parameter successfully
+-------------------capture demodulation data successfully
+----------------------------analyse result information successfully
+
+           TX_[0]     0M  Power[ 0]    : 31.226723dBm   ( 16.50 .O................  21.00)
+           TX_[0]     0M  FreqErr      : 915006000.000000Hz     (-40.00 ........O.........  40.00)
+ciu Verify TX successfully
+cent band 915000000
+centauri frequency: 915000000
+vc# cent mod 1000
+ centauri modulation index set to 1000
+vc# cent rate 50000
+Centauri data rate : 50000
+vc# cent txc -p 1FF 2000
+ptngen: p, pktsz=0x1ff,  8192 packets, interval 100 us
+vc# cent tU閜O岤焫c f6 1 0
+ptngen: i, pktsz=0xf6,  1 packets, interval 0 us
+vc# ptngen ended, 1 packets.
+cent ber -c
+centauriB1 PHY statistics cleared
+vc# cent dwen 0
+data whitening off
+vc# cent band 915000000
+centauri frequency: 915000000
+vc# cent mod 1000
+U閜O岤?centauri modulation index set to 1000
+vc# cent rate 50000
+Centauri data rate : 50000
+vc# cent rxc f6
+vc# cent ber 20
+
+vc# 1/20
+   expect len=246, rcvd len=246, rssi=-107, lqi=120
+   good/count=1/1, fcs err 0, len err 0, ber=0/1968
+
+2/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=120
+   good/count=2/2, fcs err 0, len err 0, ber=0/3936
+
+3/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=132
+   good/count=3/3, fcs err 0, len err 0, ber=0/5904
+
+4/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=120
+   good/count=4/4, fcs err 0, len err 0, ber=0/7872
+
+5/20
+   expect len=246, rcvU閜O岤焏 len=246, rssi=-108, lqi=132
+   good/count=5/5, fcs err 0, len err 0, ber=0/9840
+
+6/20
+   expect len=246, rcvd len=246, rssi=-107, lqi=132
+   good/count=6/6, fcs err 0, len err 0, ber=0/11808
+
+7/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=138
+   good/count=7/7, fcs err 0, len err 0, ber=0/13776
+
+8/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=132
+   good/count=8/8, fcs err 0, len err 0, ber=0/15744
+
+9/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=114
+   good/count=9/9, fcs err 0, len err 0, ber=0/17712
+
+10/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=114
+   good/count=10/10, fcs err 0, len err 0, ber=0/19680
+
+11/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=114
+   good/count=11/11, fcs err 0, len err 0, ber=0/21648
+
+12/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=114
+   good/count=12/12, fcs err 0, len err 0, ber=0/23616
+
+13/20
+   expect len=246, rcvd len=246, rssi=-109, lqi=144
+   good/count=13/13, fcs err 0, len err 0, ber=0/25584
+
+14/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=126
+   good/count=14/14, fcs err 0, len err 0, ber=0/27552
+
+15/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=114
+   good/count=15/15, fcs err 0, len err 0, ber=0/29520
+
+16/20
+   expect len=246, rcvd len=246, rssi=-109, lqi=132
+   good/count=16/16, fcs err 0, len err 0, ber=0/31488
+
+17/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=126
+   good/count=17/17, fcs err 0, len err 0, ber=0/33456
+
+18/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=120
+   good/count=18/18, fcs err 0, len err 0, ber=0/35424
+
+19/20
+   expect len=246, rcvd len=246, rssi=-108, lqi=108
+   good/count=19/19, fcs err 0, len err 0, ber=0/37392
+
+20/20
+   expect lenU閜O岤?246, rcvd len=246, rssi=-108, lqi=120
+   good/count=20/20, fcs err 0, len err 0, ber=0/39360
+
+ber end 20.
+        the real rssi is -108, the good rate is100
+ciu Verify RX successfully
+the test duration time is :27297 ms

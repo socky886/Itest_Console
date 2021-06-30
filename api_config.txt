@@ -1,0 +1,11 @@
+"//把此配置文件放置在API_Demo.exe相同目录
+
+//vsg_port=2		//配置VSG口，1～4有效值。1对应RF1，依次类推
+//vsa_port=1		//配置VSA口，1～4有效值。1对应RF1，依次类推
+//users=3		//配置WT-208多连接用户数量，1～4有效值。
+//connect_delta=100	//配置WT-208多连接的时间差，1～1000有效值，单位毫秒。
+weijunfeng=4
+DUT=4		//DUT Com
+GOLDEN=48	//Golden Com
+DEBUG=1                 //print debug information
+

@@ -1,0 +1,81 @@
+//******************************************************************************
+//                      DUT Setup file
+//******************************************************************************
+
+WT_WISUN_TX_FREQ_ERR_TOLERANCE = 40		// 頻偏指標容限，ppm,取值范?(0-100)
+
+WT_WISUN_REBOOT_DELAY = 2000 			//(ms)
+
+WT_WISUN_CARRIER_FREQ_MHZ = 915			// 初始化Freq
+
+WT_WISUN_IS_CAL_TARGET_POWER = 1		//是否因應power範圍調整
+
+WT_WISUN_TX_CAL_MAX_PWR_LEVEL = 5      //WT_WISUN_IS_CAL_TARGET_POWER=1 才有作用
+
+WT_WISUN_TX_CAL_MIN_PWR_LEVEL = -10      //WT_WISUN_IS_CAL_TARGET_POWER=1 才有作用
+
+WT_WISUN_TX_VERIFY_USE_DEFAULT_PWR_LEVEL = 20
+
+WT_WISUN_DEFAULT_PWR_LEVEL = 20
+
+WT_WISUN_SET_FEM_STATE = 1              //ELNA setting;EPA setting
+
+WT_WISUN_TX_CAL_TARGET_PWR_UP = 1	    //Target power tolerance
+
+WT_WISUN_TX_CAL_TARGET_PWR_LOW = -3	    //Target power tolerance
+
+WT_WISUN_TX_OFFSET_PWR_UP = 5		    //power offset tolerance
+
+WT_WISUN_TX_OFFSET_PWR_LOW = -5		    //power offset tolerance		
+
+WT_WISUN_FREQ_CAL_TARGET = 1            //Cal Freq 中心目標
+
+WT_WISUN_FREQ_CAL_TOLERANCE = 1	        //Cal Freq +- tolerance
+
+WT_WISUN_FREQ_XTALOFFSET_UP =80       //Xtal offset Up
+
+WT_WISUN_FREQ_XTALOFFSET_LOW =75       //Xtal offset Low
+
+WT_WISUN_RSSI_OFFSET_TARGET = -50         //Rssi Target
+
+WT_WISUN_RSSI_OFFSET_UP = 10	            //Rssi offset tolerance
+
+WT_WISUN_RSSI_OFFSET_LOW = -10	        //Rssi offset tolerance
+
+WT_WISUN_FREQ_CAL_PA_TYPE = HPA
+
+WT_WISUN_FREQ_CAL_PA_CODE = 32          //0~40
+
+WT_WISUN_RSSI_ELNA = 1			     //elna需support bypass mode	
+
+WT_WISUN_RSSI_LNA_OFFSET = -1		//support bypass mode rssi offset
+
+WT_WISUN_RSSI_CAL_POWER = -80
+
+WT_WISUN_RX_PER_LIMIT = 90	            //Rx 收包
+
+WT_WISUN_RX_PER_RSSI_TARGET = -107      //Rx Rssi Target
+
+WT_WISUN_RX_PER_RSSI_UP = 3	        //Rx Rssi Up
+
+WT_WISUN_RX_PER_RSSI_LOW = -2	        //Rx Rssi LOW
+
+WT_WISUN_RX_PER_LQI_TARGET = 100        //Rx lqi Target
+
+WT_WISUN_RX_PER_LQI_UP = 100	        //Rx lqi Up
+
+WT_WISUN_RX_PER_LQI_LOW = 0	        //Rx lqi LOW
+
+WT_WISUN_FREQ_DEV_RMS_UP_TOLERANCE = 130
+WT_WISUN_FREQ_DEV_RMS_LOW_TOLERANCE = 70
+WT_WISUN_FREQ_DEV_MAX_TOLERANCE = 200
+WT_WISUN_FREQ_DEV_MIN_TOLERANCE = 100
+
+WT_WISUN_ZERO_CROSS_RMS_TOLERANCE = 12.5
+WT_WISUN_ZERO_CROSS_MAX_UP = 5
+WT_WISUN_ZERO_CROSS_MAX_LOW = -5
+
+WT_WISUN_ZERO_CROSS_MIN_UP = 5
+WT_WISUN_ZERO_CROSS_MIN_LOW = -5
+
+WT_WISUN_SPECTURM_FAIL_POINTS_LIMIT = 5.12

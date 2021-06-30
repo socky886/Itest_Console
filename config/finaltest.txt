@@ -1,0 +1,4 @@
+DUT=4
+GOLDEN=48
+DEBUG=1
+end

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi_11b_demo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wt208_vsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bt_demo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="download_waveform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zigbee_demo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wt208_vsa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex_CIU.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WT208_Tester.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="harmwee.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vsg_vsa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="harm_nic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi_11b_demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wt208_vsg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bt_demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="download_waveform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zigbee_demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wt208_vsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex_CIU.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WT208_Tester.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="harmwee.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vsg_vsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="harm_nic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

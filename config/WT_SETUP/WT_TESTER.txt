@@ -1,0 +1,185 @@
+//******************************************************************************
+//                          WT-Tester Setup file
+//******************************************************************************
+
+
+WT_IP_ADDRESS   		= 192.168.10.110 	// 测试仪IP
+
+WT_TESTER_CONNECT_MODE		= 1		  	// 测试仪连接模式
+							// 1:正常模式，连接时将抢占测试仪(默认值)
+							// 2:队列模式，待测试仪空闲时连接(用于乒乓测试，WT-208无效)
+							
+WT_DUT_PARALLEL_NUM		= 1			// 测试DUT个数，取值范围(1-4),默认值为1
+							
+WT_DUT_START_NUM		= 2			// 起始RF端口，取值范围(1-4),默认值为1
+
+WT_CONNECT_TESTER_RETRY		= 3			// 仪器连接重试次数，取值范围(1-100)
+WT_CALIBRATION_RETRY		= 15			// 校准时，寄存器调整次数上限,取值范围(1-100)
+WT_TX_VERIFY_RETRY		= 1			// TxVerify重试次数上限，取值范围(1-100)
+WT_RX_VERIFY_RETRY		= 3			// RxVerify测试重试次数上限，取值范围(1-100)
+
+WT_PRINT_RETRY_PROCESS		= 0			// 是否打印重试过程
+							// 0:隐藏重试过程，只打印最后一次测试结果(默认值)
+							// 1:打印每次重试的结果
+
+WT_RUN_ALL_TEST_FLOW		= 0			// 进行TxVerify、RxVerify测试时，遇到Fail时是否停止
+							// 0:停止(默认值)
+							// 1:继续运行
+
+WT_POWER_CAL_OPTIMIZE_2G        = 0        		// 2.4G 功率校准优化选项
+WT_POWER_CAL_OPTIMIZE_5G        = 0			// 5G 	功率校准优化选项
+	                               			// 0：不优化(默认值)
+                               			        // 1：准确模式（对于步进为±0.5的DUT，尽可能的调整到±0.3dB的范围）    
+                                			// 2：如果EVM较差（超标或余量不足1dB），则在允许范围内降低功率
+                                			// 3：如果EVM余量充足（余量超过3dB），则在允许范围内提升功率
+                                			// 4：不管EVM如何，在允许范围内降低功率
+                                			// 5：不管EVM如何，在允许范围内提升功率
+                                			// 6：第2、3项同时生效
+
+							
+//------------------------------------------------------------------------------
+// Calibration,TxVerify,RxVerify时，Tester延时进行DataCapture，ms，取值范围(0-10000),默认值为0
+//------------------------------------------------------------------------------
+//							OFDM	11B	HT-20	HT-40	BT	ZIGBEE 
+WT_FREQ_CAL_DELAY_MS_2_4G	0	0	0	0	0	0	0			
+WT_POW_CAL_DELAY_MS_2_4G	0	0	0	0	0	0	0
+WT_TX_VERIFY_DELAY_MS_2_4G	0	0	0	0	0	0	0
+WT_RX_VERIFY_DELAY_MS_2_4G	0	0	0	0	0	0	0
+
+
+				OFDM	11B	HT-20	HT-40	AC-20	AC-40	AC-80	AC-160   AC-80-80
+WT_FREQ_CAL_DELAY_MS_5G		0	0	0	0	0	0	0	0	 0
+WT_POW_CAL_DELAY_MS_5G		0	0	0	0	0	0	0       0        0
+WT_TX_VERIFY_DELAY_MS_5G	0	0	0	0	0	0	0       0        0
+WT_RX_VERIFY_DELAY_MS_5G	0	0	0	0	0	0	0       0        0
+
+WT_RX_VERIFY_DELAY_MS_SUB_1G 500
+WT_TX_VERIFY_DELAY_MS_SUB_1G 1000	
+WT_FREQ_CAL_DELAY_MS_SUB_1G 100
+
+
+// PER测试时Tester发包个数，取值范围(1-1000000)----------------------------------------------------------------------------------------
+//				54M	48M	36M	24M	18M	12M	9M	6M	11M	5.5M	2M	1M
+WT_PER_PACKETS_NUM_LEGACY	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				54M	48M	36M	24M	18M	12M	9M	6M	11M	5.5M	2M	1M
+WT_PER_PACKETS_NUM_5G_11A	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_HT20_1S	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_5G_HT20_1S	1000	1000	1000	1000	1000	1000	1000	1000	
+
+//				MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_HT40_1S	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_5G_HT40_1S	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				MCS8 	MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_AC20_1S	1000	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				MCS9	MCS8 	MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_AC40_1S	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				MCS9	MCS8 	MCS7  	MCS6	MCS5	MCS4	MCS3	MCS2	MCS1	MCS0
+WT_PER_PACKETS_NUM_AC80_1S	1000	1000	1000	1000	1000	1000	1000	1000	1000	1000
+
+//				BLE	1M	2M	3M
+WT_PER_PACKETS_NUM_BT           1000	1000    1000	1000
+
+WT_PER_PACKETS_NUM_ZIGBEE	1000
+
+WT_PER_PACKETS_NUM_WISUN	50
+
+WT_PER_FRAME_GAP		= 0		//PER测试帧间隔,us,取值范围(1-1000000)
+
+WT_BT_PER_FRAME_GAP		= 20	//BT RX测试帧间隔,us,取值范围(1-1000000)
+
+
+//******************************************************************************
+//                          Measurement Settings
+//******************************************************************************
+
+//------------------------------------------------------------------------------
+// Data Capture Parameters 
+//------------------------------------------------------------------------------
+WT_DATA_CAPTURE_MODE	= 1		//采样模式
+					//0: Free run(默认值)
+					//1: Trigger
+					
+WT_DATA_CAPTURE_TIME	= 50000		//采样时间,us，取值范围(100-10000)，默认值为500
+
+WT_DATA_CAPTURE_TIME_CW	= 10000		//单载波频偏校准采样时间,us，取值范围(100-10000)，默认值为10000
+
+WT_DATA_CAPTURE_AVERAGE	= 1		//平均次数，分析结果取多次采样的均值，取值范围(1-50)，默认值为1
+
+WT_USE_USER_WAVE_FILE   = 1		//WT208仪器wave文件来源,只对WIFI有效
+					//0: 使用仪器内部wave文件(默认值)
+					//1: 使用外部wave文件
+
+WT_ZIGBEE_ANALYSIS_OPTIMISE     = 0     //分析优化开关
+                                        //0:优化关闭(默认值)
+                                        //1:优化开启
+
+
+//------------------------------------------------------------------------------
+// Mode 11A&11G Parameters 
+//------------------------------------------------------------------------------
+
+WT_EVM_PH_CORR_MODE 	= 2      	// 1 - Phase correction off.
+                             		// 2 - Symbol-by-symbol correction (Default value).
+                             		// 3 - Moving avg. correction 10 symbols
+                             		
+
+WT_EVM_CH_ESTIMATE 	= 1      	// 1 - Raw Channel Estimate long train (Default value).
+                             		// 2 - 2nd Order Polyfit.
+                             		// 3 - Raw Channel Estimate full packet
+                             		
+
+WT_EVM_SYM_TIM_CORR 	= 2      	// 1 - Symbol Timing Correction Off.
+                             		// 2 - Symbol Timing Correction On (Default value).
+
+					
+WT_EVM_FREQ_SYNC 	= 2         	// 1 - Short Training Symbol.
+                             		// 2 - Long Training Symbol (Default value).
+                             		// 3 - Full Data Packet.
+
+WT_EVM_AMPL_TRACK 	= 1	     	// 1 - Amplitude tracking off(Default value).
+                             		// 2 - Amplitude tracking on.
+					
+					
+//------------------------------------------------------------------------------
+// Mode 11B Parameters 
+//------------------------------------------------------------------------------
+WT_EVM_11B_EQUALIZER	= 1    		// 1 - Equalizer Off(Default value).
+                             		// 5 - 5 taps equalizer
+                                        // 7 - 7 taps equalizer
+                                        // 9 - 9 taps equalizer
+
+WT_EVM_11B_DC_REMOVAL 	= 0    		// 0 - DC removal Off(Default value).
+                             		// 1 - DC removal On.
+					
+WT_EVM_11B_PH_CORR_MODE = 2      	// 1 - Phase correction off.
+                             		// 2 - Symbol-by-symbol correction (Default value).
+			
+					
+//------------------------------------------------------------------------------
+// Mode 11ac Parameters 
+//------------------------------------------------------------------------------
+WT_EVM_AC_CH_ESTIMATE 	= 3      	// 1 - Raw Channel Estimate long train.
+                             		// 2 - 2nd Order Polyfit.
+                             		// 3 - Raw Channel Estimate full packet(Default value).	
+
+//------------------------------------------------------------------------------
+// Tester VSA Sample Rate Mode Setting
+//------------------------------------------------------------------------------
+WT_VSG_SAMPLE_RATE_MODE	= 0		// 0 - Default 120M
+					// 1 - Auto Setting						
+							
+			
+					
+//******************************************************************************
+//                              END OF FILE
+//******************************************************************************

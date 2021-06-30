@@ -1,0 +1,182 @@
+﻿//******************************************************************************
+//                      DUT Setup file
+//******************************************************************************
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// Dut connection settings
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//��f
+WT_DUT_CONN_TYPE			= COM	  		//DUT�s���覡
+
+WT_DUT_CONN_PORT_1			= 4			//��f��
+WT_DUT_CONN_PORT_2			= 3
+WT_DUT_CONN_PORT_3			= 16
+WT_DUT_CONN_PORT_4			= 16
+WT_DUT_CONN_PORT_5			= 16
+WT_DUT_CONN_PORT_6			= 16
+WT_DUT_CONN_PORT_7			= 16
+WT_DUT_CONN_PORT_8			= 16
+
+WT_COM_BAUD					= 115200		//�i�S�v
+WT_COM_RX_FRAM_GAP			= 50			//�����V����
+WT_COM_BYTE_INTER           = 0			//�⦸�o�e�����j�]�m
+WT_COM_RTS_ENABLE			= 0			//RTS�]�m
+								//1:���}
+WT_DUT_ACK_TOKEN			= OK			//DUT�^���r��
+WT_DUT_COMMAND_END			= \n
+WT_OPEN_DUT_TIMEOUT			= 5			//�s��DUT�W�ɮɶ��Asec
+WT_COMMUNICATE_TIMEOUT		= 3			// �q�T�W�ɮɶ��Asec
+WT_DUT_READY_ACK			= vc#		//�P�_dut�O�_ready���^���r��
+
+
+	
+WT_AUTO_TEST_WHEN_DUT_READY 		= 0   			// ��d��۰ʶ}�l���աA���ҳn���ͮ�
+								//0:���
+								//1:�۰�
+
+WT_START_TEST_WHEN_POPUP_OK		= 0			//�b�ҥΤF�۰ʧ�d���աA�u����۰ʶ}�l���աA���ݭn����DUT READY
+  								// 0�G�ݭnDUT READY
+								// 1�G���ݭnDUT READY
+							
+
+WT_WRITE_EFUSE_REQUEST			= 1			//�geFuse�e���ܽT�{
+									//1:����
+									//0:������							
+//TX�BRX���ծɤU�o���O��
+WT_DUT_Retry_COMMAND_START
+//
+WT_DUT_Retry_COMMAND_END
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// Dut Attribute setting
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WT_DUT_BAND_2G				= 0			//DUT�O�_���2.4G
+WT_DUT_BAND_5G				= 0			//DUT�O�_���5.8G
+WT_DUT_HAS_11AC				= 0			//DUT�O�_���11AC
+WT_DUT_BAND_SUB_1G			= 1			//DUT�O�_���SUB_1G
+	
+WT_DUT_ANT_2G				= 0			//DUT 2.4G�ѽu�ƥ�
+WT_DUT_ANT_5G				= 0			//DUT 5G�ѽu�ƥ�
+WT_DUT_ANT_SUB_1G			= 1			//DUT SUB_1G�ѽu�ƥ�
+
+
+									//1�G�U�o(�q�{�U�o)	
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// Calibration settings
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//DUT�W���H�s���d��		MIN	MAX
+WT_DUT_FREQ_REG_RANGE		0	511
+
+
+//------------------------------------------------------------------------------
+// �W���շǳ]�m
+//------------------------------------------------------------------------------
+
+WT_FREQ_CAL_DEFAULT_REG			= 20	// �W���H�s�����q�{��.	
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// Other settings
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	
+WT_AUTO_TEST_WHEN_DUT_READY 		= 0   			// ��d��۰ʶ}�l���աA���ҳn���ͮ�
+								//0:���(�q�{��)
+								//1:�۰�
+
+WT_START_TEST_WHEN_POPUP_OK		= 0			//�b�ҥΤF�۰ʧ�d���աA�u����۰ʶ}�l���աA���ݭn����DUT READY
+  								// 0�G�ݭnDUT READY(�q�{��)
+								// 1�G���ݭnDUT READY
+							
+WT_DUT_LIB_NAME             		= Dutlib_VertexCom_WiSUN	//���ղ��~DLL,�q�{DutLib.dll
+
+
+WT_IS_NEED_LINKMES			= 0			//�O�_�s��MES
+								//0�G���s��(�q�{��)
+								//1: �s��
+//WT_MES_LIB_NAME			= WT_MES.dll
+
+WT_PASS_LOG_NAME_FORMAT			= 1			//����PASS��LOG�R�W�覡,���Ƚd��(0-100)
+								//0: ����ɶ�+PASS
+								//1: MAC+����ɶ�+PASS(�q�{��)
+								//2: SN+����ɶ�+PASS
+
+WT_FAIL_LOG_NAME_FORMAT			= 0			//MAC�q�t�m���Ū����FAIL��LOG�R�W�覡,���Ƚd��(0-100)
+								//0: ����ɶ�+FAIL(�q�{��)
+								//1: @@@@@@@@@@@@+����ɶ�+FAIL	
+								//2: MAC+����ɶ�+FAIL 
+								//3: SN+����ɶ�+FAIL	
+
+WT_REGEX_MATCH_RECVEIVE			= DFC00(\S{8})*(\S{8})(\S{8})(\S{8})	//�ǰt���]���G�A�NReceive Packet Count�BPER�BReceive Payload bytes�BBER�@���ʤǰt�X��
+
+WT_REGEX_MATCH_RECVEIVE_LE		= F2000(\S{4})				//�ǰt���]���G�A�NReceive Packet Count�ǰt�X��
+
+WT_REGEX_MATCH_MAC			= 91000(\S{12})				//�ǰtMAC�A�NMAC�����X��								
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+// Log�ͦ�
+//------------------------------------------------------------------------------
+WT_TEST_LOG_PATH =              		//���wLog��X����|
+
+WT_MAC_LOG_ENABLE		= 1		// �ͦ� Mac Log(�C��DUT�W�ߤ@��Log)
+						// 1:�ͦ�
+						// 0:���ͦ�(�q�{��)
+						
+WT_TOTAL_LOG_ENABLE		= 0		// �ͦ� Total Log
+						// 1:�ͦ�
+						// 0:���ͦ�(�q�{��)
+						
+WT_CSV_LOG_ENABLE		= 0		// �ͦ� CSV Log
+						// 1:�ͦ�
+						// 0:���ͦ�(�q�{��)
+						
+WT_CSV_LOG_LIB_NAME		= WT_CSV_LOG.dll
+                                                
+                                                
+//------------------------------------------------------------------------------
+// �έp�]�m
+//------------------------------------------------------------------------------
+WT_SAVE_TEST_STATISTIC		= 1		// �n�������ɫO�sPASS/FAIL�έp�ƾ�
+						// 1:�O�s
+						// 0:���O�s(�q�{��)
+
+WT_TEST_CLEAR_FAIL		= 0		// �n�������ɲM��FAIL�έp�ƾ�
+						// 1:�M��
+						// 0:���M��(�q�{��)
+
+
+WT_PASS_NUMBER			= 768
+WT_FAIL_NUMBER			= 366
+
+WT_PASS_NUMBER_1		= 734
+WT_FAIL_NUMBER_1		= 323
+
+WT_PASS_NUMBER_2		= 34
+WT_FAIL_NUMBER_2		= 43
+
+WT_PASS_NUMBER_3		= 0
+WT_FAIL_NUMBER_3		= 0
+
+WT_PASS_NUMBER_4		= 0
+WT_FAIL_NUMBER_4		= 0
+
+WT_PASS_NUMBER_5		= 0
+WT_FAIL_NUMBER_5		= 0
+
+WT_PASS_NUMBER_6		= 0
+WT_FAIL_NUMBER_6		= 0
+
+WT_PASS_NUMBER_7		= 0
+WT_FAIL_NUMBER_7		= 0
+
+WT_PASS_NUMBER_8		= 0
+WT_FAIL_NUMBER_8		= 0	
+	

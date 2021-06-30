@@ -1,0 +1,85 @@
+//******************************************************************************
+// [CHAIN]
+//
+//	CHAIN0	CHAIN1
+//
+//******************************************************************************
+//[程序内置的常用变量]：
+//$result, $DUTIP, $WIFI_MAC_2_4G, $LAN_MAC, $WAN_MAC, $WIFI_MAC_5G, $BT_MAC, $DUT_SN
+//******************************************************************************
+WT_CONNECT_TESTER				//连接测试仪
+
+WT_INSERT_WiSUN
+
+//WT_DELAY  100					//延时处理 单位毫秒
+
+//WT_SHOW_MSGBOX				//提示框
+
+	WT_USER_COMMAND	[reboot] [#]	[10000]
+	WT_DELAY 2000
+                WT_USER_COMMAND	[cent dwen 0] [#]	[10000]
+
+//	WT_SET_SN_AND_MAC_ADDRESS
+
+	WT_CAL_WiSUN_RSSI_CAL 		915 	WISUN		CHAIN0
+
+	WT_CAL_WiSUN_TX_CAL_GAIN 	915 	WISUN		CHAIN0	[1][50000][20]
+	
+	WT_CAL_WiSUN_FREQ  		915    	WISUN		CHAIN0	
+
+//------------------------------------------------------------------------------------
+// TX Verifing 
+// Example: CMD [FREQ] [DATA RATE] [CHAIN] [MODULATION][RATE][LLMT][ULMT]
+//
+//------------------------------------------------------------------------------------
+
+//	WT_VERIFY_WiSUN_TX	 902    WISUN	CHAIN0  [1][50000][17][21]
+	
+	WT_VERIFY_WiSUN_TX	 915    WISUN	CHAIN0  [1][50000][17][21]
+	
+//	WT_VERIFY_WiSUN_TX	 927    WISUN	CHAIN0  [1][50000][17][21]
+
+
+//------------------------------------------------------------------------------------
+// RX Verifing 
+// Example: CMD [FREQ] [DATA RATE] [CHAIN] [PSDU] [RATE]
+//
+//------------------------------------------------------------------------------------
+//	WT_USER_COMMAND	[reboot] [#]	[10000]
+//	WT_DELAY 2000
+//                WT_USER_COMMAND	[cent dwen 0] [#]	[10000]
+
+	
+//	WT_VERIFY_WiSUN_RX	 902    WISUN	CHAIN0  [246][50000][-104]
+
+	WT_VERIFY_WiSUN_RX	 915    WISUN	CHAIN0  [246][50000][-107]
+
+//	WT_VERIFY_WiSUN_RX	 927    WISUN	CHAIN0  [246][50000][-103]
+
+
+//------------------------------------------------------------------------------------
+//    	WT_VERIFY_RX_SWEEP	843	 WISUN		CHAIN0 [246][50000] -112  -115   -1  //扫描灵敏度         
+//******************************************************************************
+
+WT_REMOVE_DUT					//关闭蓝牙
+WT_DISCONNECT_TESTER				//断开仪器连接  
+
+//WT_USER_EXT_APP	User_Application  param1 param2 ...	  	  // 执行用户扩展程序,支持传入多个参数
+                                                                  // User_Application；APP名字
+								  // param1:传入的参数。
+								  // 特殊参数：$result，当前FLOW测试结果；$DUTIP，当前DUT IP; $TESTERIP,仪器IP; $TESTPORT, 仪器端口号
+								  // 功能参数[-F] 测试FAIL不执行
+								  // 功能参数[-P] 测试PASS不执行
+
+//WT_USER_COMMAND	[Command] [ok]	[timeout]	 		  //发送用户自定义命令
+								  // command: 待发送命令
+								  // ack: 返回字符
+								  // timeout: 指令延时
+
+//WT_OPETATE_EXTERNAL_DEV [type] [command] [ack] 	 		  // type:设备类型，目前只支持串口：COM；
+								  // command: 待发送命令
+								  // ack: 返回字符
+						 
+//******************************************************************************
+//                              END OF FILE
+//******************************************************************************

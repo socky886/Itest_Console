@@ -1,0 +1,331 @@
+I18N Runtime Warning:
+        Missing ICU data file detected while processing directory containing libut.{dll|so|sl|dylib}.
+        Hint: Check for a misconfigured environment or installation.
+open api_config.txt successfully
+the dut is com9
+open api_config.txt successfully
+the vsg is 1
+open api_config.txt successfully
+the vsa is 1
+open api_config.txt successfully
+the cable loss is 31.6
+open api_config.txt successfully
+open api_config.txt successfully
+the frequency offset up is  50
+the frequency offset low is 1
+COM9
+open serial port of dut successfully
+verify dut successfully
+cent nv series_number
+series_number 1306
+vc# 1306
+get serial number successfully
+
+
+Junfeng.wei get the ip address is:192.168.10.254
+open api_config.txt successfully
+ciu force to test mode successfully
+open api_config.txt successfully
+open api_config.txt successfully
+                dut is transmit the single wave
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914981000.000000
+        the frequency offset is 18986.687909
+        the power is -34.631693
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914982000.000000
+        the frequency offset is 18045.285010
+        the power is -34.626335
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914982000.000000
+        the frequency offset is 17922.759043
+        the power is -34.636632
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914983000.000000
+        the frequency offset is 17000.986219
+        the power is -34.631969
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914984000.000000
+        the frequency offset is 16036.345901
+        the power is -34.616141
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914984000.000000
+        the frequency offset is 15925.779788
+        the power is -34.611909
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914985000.000000
+        the frequency offset is 15018.854034
+        the power is -34.628150
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914985000.000000
+        the frequency offset is 14911.164373
+        the power is -34.632543
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914986000.000000
+        the frequency offset is 13903.387507
+        the power is -34.629768
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914987000.000000
+        the frequency offset is 12972.925700
+        the power is -34.612679
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914988000.000000
+        the frequency offset is 12054.598750
+        the power is -34.612509
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914988000.000000
+        the frequency offset is 11950.041917
+        the power is -34.636769
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914989000.000000
+        the frequency offset is 11016.655906
+        the power is -34.632690
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914989000.000000
+        the frequency offset is 10905.765436
+        the power is -34.660905
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914990000.000000
+        the frequency offset is 10006.153944
+        the power is -34.629174
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914990000.000000
+        the frequency offset is 9903.668174
+        the power is -34.678581
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914991000.000000
+        the frequency offset is 8951.573365
+        the power is -34.685029
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914992000.000000
+        the frequency offset is 8017.109368
+        the power is -34.669834
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914993000.000000
+        the frequency offset is 7091.250104
+        the power is -34.667990
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914993000.000000
+        the frequency offset is 6991.566738
+        the power is -34.684939
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914994000.000000
+        the frequency offset is 6078.899543
+        the power is -34.690165
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914994000.000000
+        the frequency offset is 5956.190535
+        the power is -34.674598
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914995000.000000
+        the frequency offset is 5015.567461
+        the power is -34.664824
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914995000.000000
+        the frequency offset is 4910.141019
+        the power is -34.680183
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914996000.000000
+        the frequency offset is 4002.991118
+        the power is -34.696367
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914997000.000000
+        the frequency offset is 3085.518108
+        the power is -34.684311
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914997000.000000
+        the frequency offset is 2939.334720
+        the power is -34.662258
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914998000.000000
+        the frequency offset is 2029.507018
+        the power is -34.655757
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914998000.000000
+        the frequency offset is 1931.770253
+        the power is -34.671376
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914999000.000000
+        the frequency offset is 1049.251281
+        the power is -34.675453
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -914999000.000000
+        the frequency offset is 907.404855
+        the power is -34.658508
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915000000.000000
+        the frequency offset is -15.726051
+        the power is -34.685479
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915001088.203389
+        the frequency offset is -930.259697
+        the power is -34.693351
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915001143.913267
+        the frequency offset is -1041.385750
+        the power is -34.684536
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915001949.273984
+        the frequency offset is -1949.273984
+        the power is -34.682481
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915002069.118397
+        the frequency offset is -2069.118397
+        the power is -34.671061
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915002979.768339
+        the frequency offset is -2979.768339
+        the power is -34.656610
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915003068.341909
+        the frequency offset is -3068.341909
+        the power is -34.657343
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915003978.699194
+        the frequency offset is -3978.699194
+        the power is -34.674386
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915004084.303009
+        the frequency offset is -4084.303009
+        the power is -34.644678
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915005052.419834
+        the frequency offset is -5052.419834
+        the power is -34.645980
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915005944.089233
+        the frequency offset is -5944.089233
+        the power is -34.665826
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915006042.315910
+        the frequency offset is -6042.315910
+        the power is -34.666838
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915006905.138236
+        the frequency offset is -6905.138236
+        the power is -34.675992
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915007044.217257
+        the frequency offset is -7044.217257
+        the power is -34.649561
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915007923.842542
+        the frequency offset is -7923.842542
+        the power is -34.647614
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915008003.872987
+        the frequency offset is -8003.872987
+        the power is -34.666078
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915008074.764746
+        the frequency offset is -8074.764746
+        the power is -34.678124
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915009033.486844
+        the frequency offset is -9033.486844
+        the power is -34.662371
+open api_config.txt successfully
+weijunfeng Set tester external cable loss 31.600000 dB
+grab single wave frequency and pwoer successfully
+        the frequency is -915009944.440279
+        the frequency offset is -9944.440279
+        the power is -34.639606
+ciu xtal calibration failed
