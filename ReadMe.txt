@@ -1,4 +1,6 @@
-﻿2021/06/30
+﻿2021/07/01
+   redme laptop test
+2021/06/30
    add the minimal tx power to config
    add the tx packet number of VSG to config
    add the rx sensitivity to config
